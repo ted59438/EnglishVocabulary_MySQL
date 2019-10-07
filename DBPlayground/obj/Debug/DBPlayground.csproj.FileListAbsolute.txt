@@ -1,0 +1,10 @@
+c:\users\user\documents\visual studio 2015\Projects\DBPlayground\DBPlayground\bin\Debug\DBPlayground.exe.config
+c:\users\user\documents\visual studio 2015\Projects\DBPlayground\DBPlayground\bin\Debug\DBPlayground.exe
+c:\users\user\documents\visual studio 2015\Projects\DBPlayground\DBPlayground\bin\Debug\DBPlayground.pdb
+c:\users\user\documents\visual studio 2015\Projects\DBPlayground\DBPlayground\obj\Debug\DBPlayground.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2015\Projects\DBPlayground\DBPlayground\obj\Debug\DBPlayground.Properties.Resources.resources
+c:\users\user\documents\visual studio 2015\Projects\DBPlayground\DBPlayground\obj\Debug\DBPlayground.csproj.GenerateResource.Cache
+c:\users\user\documents\visual studio 2015\Projects\DBPlayground\DBPlayground\obj\Debug\DBPlayground.exe
+c:\users\user\documents\visual studio 2015\Projects\DBPlayground\DBPlayground\obj\Debug\DBPlayground.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\DBPlayground\DBPlayground\obj\Debug\DBPlayground.DBPlayground.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\DBPlayground\DBPlayground\bin\Debug\MySql.Data.dll

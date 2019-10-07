@@ -1,0 +1,103 @@
+C:\Users\dgw\Documents\Visual Studio 2010\Projects\EnglishVocabularyLearning\EnglishVocabularyLearning\bin\Debug\EnglishVocabularyLearning.exe
+C:\Users\dgw\Documents\Visual Studio 2010\Projects\EnglishVocabularyLearning\EnglishVocabularyLearning\bin\Debug\EnglishVocabularyLearning.pdb
+C:\Users\dgw\Documents\Visual Studio 2010\Projects\EnglishVocabularyLearning\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.Form1.resources
+C:\Users\dgw\Documents\Visual Studio 2010\Projects\EnglishVocabularyLearning\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.Properties.Resources.resources
+C:\Users\dgw\Documents\Visual Studio 2010\Projects\EnglishVocabularyLearning\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.QuizConfigForm.resources
+C:\Users\dgw\Documents\Visual Studio 2010\Projects\EnglishVocabularyLearning\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.QuizForm.resources
+C:\Users\dgw\Documents\Visual Studio 2010\Projects\EnglishVocabularyLearning\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.QuizRecordForm.resources
+C:\Users\dgw\Documents\Visual Studio 2010\Projects\EnglishVocabularyLearning\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.TextInputBox.resources
+C:\Users\dgw\Documents\Visual Studio 2010\Projects\EnglishVocabularyLearning\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.VocabularyManager.resources
+C:\Users\dgw\Documents\Visual Studio 2010\Projects\EnglishVocabularyLearning\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.csproj.GenerateResource.Cache
+C:\Users\dgw\Documents\Visual Studio 2010\Projects\EnglishVocabularyLearning\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.exe
+C:\Users\dgw\Documents\Visual Studio 2010\Projects\EnglishVocabularyLearning\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.pdb
+C:\Users\dgw\Documents\Visual Studio 2010\Projects\EnglishVocabularyLearning\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.csprojResolveAssemblyReference.cache
+D:\ChengYu\Playground\ITHome_鐵人賽\EnglishVocabularyLearning\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.exe
+D:\ChengYu\Playground\ITHome_鐵人賽\EnglishVocabularyLearning\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.pdb
+D:\ChengYu\Playground\ITHome_鐵人賽\EnglishVocabularyLearning\EnglishVocabularyLearning\bin\Debug\EnglishVocabularyLearning.exe
+D:\ChengYu\Playground\ITHome_鐵人賽\EnglishVocabularyLearning\EnglishVocabularyLearning\bin\Debug\EnglishVocabularyLearning.pdb
+D:\ChengYu\Playground\ITHome_鐵人賽\EnglishVocabularyLearning\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.csprojResolveAssemblyReference.cache
+D:\ChengYu\Playground\ITHome_鐵人賽\EnglishVocabularyLearning\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.Form1.resources
+D:\ChengYu\Playground\ITHome_鐵人賽\EnglishVocabularyLearning\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.Properties.Resources.resources
+D:\ChengYu\Playground\ITHome_鐵人賽\EnglishVocabularyLearning\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.QuizConfigForm.resources
+D:\ChengYu\Playground\ITHome_鐵人賽\EnglishVocabularyLearning\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.QuizForm.resources
+D:\ChengYu\Playground\ITHome_鐵人賽\EnglishVocabularyLearning\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.QuizRecordForm.resources
+D:\ChengYu\Playground\ITHome_鐵人賽\EnglishVocabularyLearning\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.TextInputBox.resources
+D:\ChengYu\Playground\ITHome_鐵人賽\EnglishVocabularyLearning\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.VocabularyManager.resources
+D:\ChengYu\Playground\ITHome_鐵人賽\EnglishVocabularyLearning\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.csproj.GenerateResource.Cache
+D:\ChengYu\Playground\ITHome_鐵人賽\EnglishVocabularyLearning\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.DBSettingForm.resources
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.exe
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.pdb
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\bin\Debug\EnglishVocabularyLearning.exe.config
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\bin\Debug\EnglishVocabularyLearning.exe
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\bin\Debug\EnglishVocabularyLearning.pdb
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\bin\Debug\MySql.Data.dll
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.csprojResolveAssemblyReference.cache
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.DBSettingForm.resources
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.Form1.resources
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.Properties.Resources.resources
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.QuizConfigForm.resources
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.QuizForm.resources
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.QuizRecordForm.resources
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.TextInputBox.resources
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.VocabularyManager.resources
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.csproj.GenerateResource.Cache
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\bin\Debug\Resources\settings.png
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\bin\Debug\Resources\settings_hover.png
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.StudentManagement.resources
+F:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\bin\Debug\EnglishVocabularyLearning.exe.config
+F:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.exe
+F:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.pdb
+F:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\bin\Debug\Resources\settings.png
+F:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\bin\Debug\Resources\settings_hover.png
+F:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\bin\Debug\EnglishVocabularyLearning.exe
+F:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\bin\Debug\EnglishVocabularyLearning.pdb
+F:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\bin\Debug\MySql.Data.dll
+F:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.csprojResolveAssemblyReference.cache
+F:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.DBSettingForm.resources
+F:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.StudentManagement.resources
+F:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.Form1.resources
+F:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.Properties.Resources.resources
+F:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.QuizConfigForm.resources
+F:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.QuizForm.resources
+F:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.QuizRecordForm.resources
+F:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.TextInputBox.resources
+F:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.VocabularyManager.resources
+F:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.csproj.GenerateResource.Cache
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\bin\Debug\EnglishVocabularyLearning.exe.config
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.exe
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.pdb
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\bin\Debug\Resources\settings.png
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\bin\Debug\Resources\settings_hover.png
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\bin\Debug\EnglishVocabularyLearning.exe
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\bin\Debug\EnglishVocabularyLearning.pdb
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\bin\Debug\MySql.Data.dll
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.csprojResolveAssemblyReference.cache
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.DBSettingForm.resources
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.StudentManagement.resources
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.Form1.resources
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.Properties.Resources.resources
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.QuizConfigForm.resources
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.QuizForm.resources
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.QuizRecordForm.resources
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.TextInputBox.resources
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.VocabularyManager.resources
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\Finish\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.csproj.GenerateResource.Cache
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day01\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\bin\Debug\EnglishVocabularyLearning.exe.config
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day01\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.exe
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day01\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.pdb
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day01\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.csprojResolveAssemblyReference.cache
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day01\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.DBSettingForm.resources
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day01\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.StudentManagement.resources
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day01\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.Form1.resources
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day01\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.Properties.Resources.resources
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day01\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.QuizConfigForm.resources
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day01\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.QuizForm.resources
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day01\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.QuizRecordForm.resources
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day01\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.TextInputBox.resources
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day01\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.VocabularyManager.resources
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day01\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.csproj.GenerateResource.Cache
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day01\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\bin\Debug\Resources\settings.png
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day01\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\bin\Debug\Resources\settings_hover.png
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day01\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\bin\Debug\EnglishVocabularyLearning.exe
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day01\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\bin\Debug\EnglishVocabularyLearning.pdb
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day01\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\bin\Debug\MySql.Data.dll
