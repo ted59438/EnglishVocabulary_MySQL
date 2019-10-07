@@ -101,3 +101,6 @@ E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day01\EnglishV
 E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day01\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\bin\Debug\EnglishVocabularyLearning.exe
 E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day01\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\bin\Debug\EnglishVocabularyLearning.pdb
 E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day01\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\bin\Debug\MySql.Data.dll
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day21\EnglishVocabulary_MySQL\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\bin\Debug\EnglishVocabularyLearning.exe.config
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day21\EnglishVocabulary_MySQL\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.exe
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day21\EnglishVocabulary_MySQL\EnglishVocabularyLearning_MySQL\EnglishVocabularyLearning\obj\x86\Debug\EnglishVocabularyLearning.pdb

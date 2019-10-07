@@ -8,3 +8,6 @@ c:\users\user\documents\visual studio 2015\Projects\DBPlayground\DBPlayground\ob
 c:\users\user\documents\visual studio 2015\Projects\DBPlayground\DBPlayground\obj\Debug\DBPlayground.pdb
 C:\Users\user\Documents\Visual Studio 2015\Projects\DBPlayground\DBPlayground\obj\Debug\DBPlayground.DBPlayground.resources
 C:\Users\user\Documents\Visual Studio 2015\Projects\DBPlayground\DBPlayground\bin\Debug\MySql.Data.dll
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day21\DBPlayground\DBPlayground\bin\Debug\DBPlayground.exe.config
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day21\DBPlayground\DBPlayground\obj\Debug\DBPlayground.exe
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day21\DBPlayground\DBPlayground\obj\Debug\DBPlayground.pdb
