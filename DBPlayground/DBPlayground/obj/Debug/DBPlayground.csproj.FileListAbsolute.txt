@@ -11,3 +11,13 @@ C:\Users\user\Documents\Visual Studio 2015\Projects\DBPlayground\DBPlayground\bi
 E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day21\DBPlayground\DBPlayground\bin\Debug\DBPlayground.exe.config
 E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day21\DBPlayground\DBPlayground\obj\Debug\DBPlayground.exe
 E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day21\DBPlayground\DBPlayground\obj\Debug\DBPlayground.pdb
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day21\EnglishVocabulary_MySQL\DBPlayground\DBPlayground\bin\Debug\DBPlayground.exe.config
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day21\EnglishVocabulary_MySQL\DBPlayground\DBPlayground\obj\Debug\DBPlayground.exe
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day21\EnglishVocabulary_MySQL\DBPlayground\DBPlayground\obj\Debug\DBPlayground.pdb
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day21\EnglishVocabulary_MySQL\DBPlayground\DBPlayground\bin\Debug\DBPlayground.exe
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day21\EnglishVocabulary_MySQL\DBPlayground\DBPlayground\bin\Debug\DBPlayground.pdb
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day21\EnglishVocabulary_MySQL\DBPlayground\DBPlayground\bin\Debug\MySql.Data.dll
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day21\EnglishVocabulary_MySQL\DBPlayground\DBPlayground\obj\Debug\DBPlayground.csprojResolveAssemblyReference.cache
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day21\EnglishVocabulary_MySQL\DBPlayground\DBPlayground\obj\Debug\DBPlayground.DBPlayground.resources
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day21\EnglishVocabulary_MySQL\DBPlayground\DBPlayground\obj\Debug\DBPlayground.Properties.Resources.resources
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day21\EnglishVocabulary_MySQL\DBPlayground\DBPlayground\obj\Debug\DBPlayground.csproj.GenerateResource.Cache

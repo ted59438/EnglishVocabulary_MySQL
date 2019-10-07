@@ -51,7 +51,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DBHelper.cs" />
     <Compile Include="DBPlayground.cs">
       <SubType>Form</SubType>
     </Compile>
