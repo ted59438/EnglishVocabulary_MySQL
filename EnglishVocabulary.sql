@@ -51,8 +51,8 @@ CREATE TABLE IF NOT EXISTS `exam_master` (
   `CorrectNumber` int(11) DEFAULT NULL,
   `WrongNumber` int(11) DEFAULT NULL,
   PRIMARY KEY (`ExamID`),
-  KEY `IDX_exam_master_StartDateTime` (`StartDateTime`),
-  KEY `IDX_exam_master_EndDateTime` (`EndDateTime`)
+  KEY `IDX_exam_master_EndDateTime` (`EndDateTime`),
+  KEY `IDX_exam_master_StartDateTime` (`StartDateTime`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- 正在傾印表格  ithome2019_englishvocabulary.exam_master 的資料：~0 rows (約數)
@@ -68,7 +68,7 @@ CREATE TABLE IF NOT EXISTS `student` (
   `Birthdate` datetime DEFAULT NULL,
   PRIMARY KEY (`StudentID`),
   UNIQUE KEY `UK_student_Username` (`Username`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AVG_ROW_LENGTH=16384;
 
 -- 正在傾印表格  ithome2019_englishvocabulary.student 的資料：~1 rows (約數)
 /*!40000 ALTER TABLE `student` DISABLE KEYS */;
