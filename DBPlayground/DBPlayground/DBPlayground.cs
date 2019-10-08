@@ -11,55 +11,100 @@ using System.Windows.Forms;
 
 namespace DBPlayground
 {
-    public partial class DBPlayground : Form
-    {
-        public DBPlayground()
-        {
-            InitializeComponent();
-        }
+	public partial class DBPlayground : Form
+	{
+		public DBPlayground()
+		{
+			InitializeComponent();
+		}
 
-        private void connectBtn_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                testConnectDB();
-                MessageBox.Show("測試連線成功", "訊息", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (Exception  ex)
-            {
+		private void connectBtn_Click(object sender, EventArgs e)
+		{
+			try
+			{
+				testConnectDB();
+				MessageBox.Show("測試連線成功", "訊息", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			}
+			catch (Exception ex)
+			{
 
-                MessageBox.Show(ex.Message, "錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
+				MessageBox.Show(ex.Message, "錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
+			}
+		}
 
-        /// <summary>
-        /// 測試連線資料庫：設定連線字串→開啟連線→關閉連線
-        /// 如果無法正常連線，丟出例外錯誤
-        /// </summary>
-        private void testConnectDB()
-        {
-            MySqlConnection connection = new MySqlConnection();
+		public string getConnectString()
+		{
+			return string.Format(@"Server =   {0};
+                                    Database = {1};
+                                    User ID =  {2};
+                                    Password = {3};
+                                    Connection Timeout = 5",
+									serverNameInput.Text,
+									dbNameInput.Text,
+									dbUsernameInput.Text,
+									dbPasswordInput.Text);
+		}
 
-            string connectionString = string.Format(@"Server =   {0};
-                                                      Database = {1};
-                                                      User ID =  {2};
-                                                      Password = {3};
-                                                      Connection Timeout = 5",
-                                                      serverNameInput.Text,
-                                                      dbNameInput.Text,
-                                                      dbUsernameInput.Text,
-                                                      dbPasswordInput.Text);
-            connection.ConnectionString = connectionString;
+		/// <summary>
+		/// 測試連線資料庫：設定連線字串→開啟連線→關閉連線
+		/// 如果無法正常連線，丟出例外錯誤
+		/// </summary>
+		private void testConnectDB()
+		{
+			MySqlConnection connection = new MySqlConnection();
+			connection.ConnectionString = getConnectString();
 
-            try
-            {
-                connection.Open();
-                connection.Close();
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-        }
-    }
+			try
+			{
+				connection.Open();
+				connection.Close();
+			}
+			catch (Exception)
+			{
+				throw;
+			}
+		}
+
+		private void queryStudentBtn_Click(object sender, EventArgs e)
+		{
+			string sql = @"SELECT RealName AS 真實姓名,
+								  Username AS 測驗帳號,
+								  CAST(Birthdate AS DATE) AS 出生日期
+						  FROM Student";
+			queryResultGrid.DataSource = queryDT(sql);
+		}
+
+		/// <summary>
+		///  基本查詢：起
+		/// </summary>
+		/// <param name="sql"></param>
+		/// <returns></returns>
+		private DataTable queryDT(string sql)
+		{
+			// Step 1. 建立連線物件 (SqlConnection)
+			MySqlConnection connection = new MySqlConnection();
+			connection.ConnectionString = getConnectString();
+
+			// Step 2. 建立指令物件 (SqlCommand)
+			MySqlCommand command = new MySqlCommand();
+			command.Connection = connection;
+			command.CommandText = sql;
+
+			// Step 3. 建立撈取資料的物件 (Adapter)
+			MySqlDataAdapter adapter = new MySqlDataAdapter();
+			adapter.SelectCommand = command;
+
+			// Step 4. 開啟連線 
+			connection.Open();
+
+			// Step 5. 執行SELECT查詢，取得資料後存放到DataTable
+			DataTable queryResultDT = new DataTable();
+			adapter.Fill(queryResultDT);
+
+			// Step 6. 關閉連線
+			connection.Close();
+
+			return queryResultDT;
+		}
+	}
 }
