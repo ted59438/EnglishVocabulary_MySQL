@@ -67,28 +67,43 @@ namespace DBPlayground
 
 		private void queryStudentBtn_Click(object sender, EventArgs e)
 		{
-			string sql = @"SELECT RealName AS 真實姓名,
+			string sql = @"SELECT StudentID,
+                                  RealName AS 真實姓名,
 								  Username AS 測驗帳號,
 								  CAST(Birthdate AS DATE) AS 出生日期
 						  FROM Student";
-			queryResultGrid.DataSource = queryDT(sql);
-		}
+
+			queryResultGrid.DataSource = queryDT(sql, new Dictionary<string, object>());
+
+            selectStudentCombo.DataSource = queryDT(sql, new Dictionary<string, object>());
+
+            // 設定下拉選單哪個欄位用於顯示，那個欄位代表選擇的對應值
+            selectStudentCombo.DisplayMember = "真實姓名";
+            selectStudentCombo.ValueMember = "StudentID";
+        }
 
 		/// <summary>
-		///  基本查詢：起
+		///  基本查詢
 		/// </summary>
 		/// <param name="sql"></param>
 		/// <returns></returns>
-		private DataTable queryDT(string sql)
+		private DataTable queryDT(string sql, Dictionary<string, object> parameters)
 		{
 			// Step 1. 建立連線物件 (SqlConnection)
 			MySqlConnection connection = new MySqlConnection();
 			connection.ConnectionString = getConnectString();
 
-			// Step 2. 建立指令物件 (SqlCommand)
+			// Step 2. 建立指令物件，設定SQL語法 (SqlCommand)
 			MySqlCommand command = new MySqlCommand();
 			command.Connection = connection;
 			command.CommandText = sql;
+
+            // 將參數綁定到語法上
+            foreach (KeyValuePair<string, object> parameter in parameters)
+            {
+                command.Parameters.AddWithValue(parameter.Key, parameter.Value);
+            }
+
 
 			// Step 3. 建立撈取資料的物件 (Adapter)
 			MySqlDataAdapter adapter = new MySqlDataAdapter();
@@ -106,5 +121,23 @@ namespace DBPlayground
 
 			return queryResultDT;
 		}
-	}
+        /// <summary>
+        /// 取得特定學生的資料
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void queryOneStudentBtn_Click(object sender, EventArgs e)
+        {
+            string sql = @"SELECT *
+                           FROM Student
+                           WHERE StudentID = @StudentID";
+
+            Dictionary<string, object> parameters = new Dictionary<string, object>()
+            {
+                {"StudentID", selectStudentCombo.SelectedValue }
+            };
+
+            queryResultGrid.DataSource = queryDT(sql, parameters);
+        }
+    }
 }
