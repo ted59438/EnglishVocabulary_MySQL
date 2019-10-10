@@ -86,7 +86,7 @@ namespace DBPlayground
             {
                 if (queryScalar(sql, parameters) != 0)
                 {
-                    MessageBox.Show("學生已經存在！", "錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("學生帳號已經存在！", "錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
             }
