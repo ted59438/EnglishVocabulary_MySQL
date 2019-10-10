@@ -69,6 +69,11 @@ namespace DBPlayground
             studentUsernameTextBox.Text = Convert.ToString(selectRow.Cells["Username"].Value);
         }
 
+        /// <summary>
+        /// 新增學生按鈕事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void insertStudentBtn_Click(object sender, EventArgs e)
         {
             string sql;
@@ -243,6 +248,12 @@ namespace DBPlayground
             }
         }
 
+        /// <summary>
+        /// 建立Connection→設定Command→綁定參數
+        /// </summary>
+        /// <param name="sql"></param>
+        /// <param name="parameters"></param>
+        /// <returns></returns>
         private MySqlCommand getAndBindCommand(string sql, Dictionary<string, object> parameters)
         {
             // 建立連線物件 (SqlConnection)
