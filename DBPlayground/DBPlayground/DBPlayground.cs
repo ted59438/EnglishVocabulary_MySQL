@@ -222,22 +222,23 @@ namespace DBPlayground
 
             try
             {
+                // 1. 開啟連線
                 command.Connection.Open();
 
-                // 1. 開啟Transcation
+                // 2. 開啟Transcation
                 command.Transaction = command.Connection.BeginTransaction();
 
-                // 2. 執行查詢
+                // 3. 執行查詢
                 command.ExecuteNonQuery();
 
-                // 3.1 執行成功，送出Commit，確認執行查詢後結果
+                // 4.1 執行成功，送出Commit，確認執行查詢後結果
                 command.Transaction.Commit();
 
                 command.Connection.Close();
             }
             catch (Exception)
             {
-                // 3.2 執行失敗，送出Rollback，返回執行查詢前的結果
+                // 4.2 執行失敗，送出Rollback，返回執行查詢前的結果
                 command.Transaction.Rollback();
             }
         }
