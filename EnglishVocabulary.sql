@@ -23,8 +23,10 @@ CREATE TABLE IF NOT EXISTS `category` (
   PRIMARY KEY (`CategoryID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- 正在傾印表格  ithome2019_englishvocabulary.category 的資料：~0 rows (約數)
+-- 正在傾印表格  ithome2019_englishvocabulary.category 的資料：~1 rows (約數)
 /*!40000 ALTER TABLE `category` DISABLE KEYS */;
+INSERT INTO `category` (`CategoryID`, `CategoryName`) VALUES
+	('7cf2fee6-7f62-4483-befb-a44b9bd3c0e2', 'Transportation 交通');
 /*!40000 ALTER TABLE `category` ENABLE KEYS */;
 
 -- 傾印  表格 ithome2019_englishvocabulary.exam_detail 結構
@@ -37,8 +39,11 @@ CREATE TABLE IF NOT EXISTS `exam_detail` (
   PRIMARY KEY (`Exam_DetailID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- 正在傾印表格  ithome2019_englishvocabulary.exam_detail 的資料：~0 rows (約數)
+-- 正在傾印表格  ithome2019_englishvocabulary.exam_detail 的資料：~2 rows (約數)
 /*!40000 ALTER TABLE `exam_detail` DISABLE KEYS */;
+INSERT INTO `exam_detail` (`Exam_DetailID`, `ExamID`, `OrderNumber`, `VocabularyID`, `IsCorrect`) VALUES
+	('6d58772e-1f93-4606-935e-8fd8b4f7d915', '03ede7e5-cb6f-484b-9e4f-8048f20bc989', 2, '89abe669-7468-4206-b561-1d9d7f029dd3', 1),
+	('9d2e94dc-2e85-400a-9574-65d10837b365', '03ede7e5-cb6f-484b-9e4f-8048f20bc989', 1, 'd2832d3b-2c85-4668-b92e-0403da983a28', 1);
 /*!40000 ALTER TABLE `exam_detail` ENABLE KEYS */;
 
 -- 傾印  表格 ithome2019_englishvocabulary.exam_master 結構
@@ -55,8 +60,10 @@ CREATE TABLE IF NOT EXISTS `exam_master` (
   KEY `IDX_exam_master_StartDateTime` (`StartDateTime`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- 正在傾印表格  ithome2019_englishvocabulary.exam_master 的資料：~0 rows (約數)
+-- 正在傾印表格  ithome2019_englishvocabulary.exam_master 的資料：~1 rows (約數)
 /*!40000 ALTER TABLE `exam_master` DISABLE KEYS */;
+INSERT INTO `exam_master` (`ExamID`, `StartDateTime`, `EndDateTime`, `CategoryID`, `StudentID`, `CorrectNumber`, `WrongNumber`, `Rate`) VALUES
+	('03ede7e5-cb6f-484b-9e4f-8048f20bc989', '2019-10-10 16:24:12', '2019-10-10 16:24:18', '7cf2fee6-7f62-4483-befb-a44b9bd3c0e2', 'b84a76a3-bc8e-46b3-b89c-e8c0f65b38f5', 2, 0, 100.00);
 /*!40000 ALTER TABLE `exam_master` ENABLE KEYS */;
 
 -- 傾印  表格 ithome2019_englishvocabulary.student 結構
@@ -70,10 +77,12 @@ CREATE TABLE IF NOT EXISTS `student` (
   UNIQUE KEY `UK_student_Username` (`Username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AVG_ROW_LENGTH=16384;
 
--- 正在傾印表格  ithome2019_englishvocabulary.student 的資料：~1 rows (約數)
+-- 正在傾印表格  ithome2019_englishvocabulary.student 的資料：~3 rows (約數)
 /*!40000 ALTER TABLE `student` DISABLE KEYS */;
 INSERT INTO `student` (`StudentID`, `Username`, `Password`, `RealName`, `Birthdate`) VALUES
-	('8facce19-27d7-4660-a62c-b2fcd718a014', 'test2', '1234', '泰大', '2019-10-06 18:56:06');
+	('37ac264e-6576-413e-8a35-d5a509dc1d87', 'test3', '*A4B6157319038724E3560894F7F932C8886EBFCF', '泰中', '2019-10-06 00:00:00'),
+	('8facce19-27d7-4660-a62c-b2fcd718a014', 'test2', '1234', '泰大', '2019-10-06 18:56:06'),
+	('b84a76a3-bc8e-46b3-b89c-e8c0f65b38f5', 'test1', '*A4B6157319038724E3560894F7F932C8886EBFCF', '泰小', '2019-10-06 18:56:06');
 /*!40000 ALTER TABLE `student` ENABLE KEYS */;
 
 -- 傾印  表格 ithome2019_englishvocabulary.vocabulary 結構
@@ -86,8 +95,11 @@ CREATE TABLE IF NOT EXISTS `vocabulary` (
   PRIMARY KEY (`VocabularyID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- 正在傾印表格  ithome2019_englishvocabulary.vocabulary 的資料：~0 rows (約數)
+-- 正在傾印表格  ithome2019_englishvocabulary.vocabulary 的資料：~2 rows (約數)
 /*!40000 ALTER TABLE `vocabulary` DISABLE KEYS */;
+INSERT INTO `vocabulary` (`VocabularyID`, `CategoryID`, `English`, `Chinese`, `PartOfSpeech`) VALUES
+	('89abe669-7468-4206-b561-1d9d7f029dd3', '7cf2fee6-7f62-4483-befb-a44b9bd3c0e2', 'train', '火車', 'n'),
+	('d2832d3b-2c85-4668-b92e-0403da983a28', '7cf2fee6-7f62-4483-befb-a44b9bd3c0e2', 'bicycle', '腳踏車', 'n');
 /*!40000 ALTER TABLE `vocabulary` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
