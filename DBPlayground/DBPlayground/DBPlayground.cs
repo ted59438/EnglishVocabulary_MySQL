@@ -104,7 +104,7 @@ namespace DBPlayground
 
             sql = @"INSERT
                     INTO Student(StudentID, RealName, Birthdate, Username, Password)
-                    VALUES (@StudentID, @RealName, @Birthdate, @Username, PASSWORD(@Password))";
+                    VALUES (@StudentID, @RealName, @Birthdate, @Username, SHA2(@Password, 256))";
             parameters = new Dictionary<string, object>()
             {
                 {"StudentID", Guid.NewGuid().ToString() },
@@ -119,10 +119,9 @@ namespace DBPlayground
                 queryNoneReturn(sql, parameters);
                 queryStudentBtn.PerformClick();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                MessageBox.Show(ex.Message, "錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -221,6 +220,11 @@ namespace DBPlayground
             }
         }
 
+        /// <summary>
+        /// 交易查詢：新修刪
+        /// </summary>
+        /// <param name="sql"></param>
+        /// <param name="parameters"></param>
         private void queryNoneReturn(string sql, Dictionary<string, object> parameters)
         {
             MySqlCommand command = getAndBindCommand(sql, parameters);
@@ -245,6 +249,7 @@ namespace DBPlayground
             {
                 // 4.2 執行失敗，送出Rollback，返回執行查詢前的結果
                 command.Transaction.Rollback();
+                throw;
             }
         }
 
