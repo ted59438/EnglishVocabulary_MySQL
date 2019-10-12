@@ -47,6 +47,14 @@ namespace DBPlayground
 
                 queryResultGrid.DataSource = queryDT(sql, new Dictionary<string, object>());
 
+                queryResultGrid.Columns["RealName"].HeaderText = "姓名";
+                queryResultGrid.Columns["Username"].HeaderText = "帳號";
+                queryResultGrid.Columns["Birthdate"].HeaderText = "生日";
+                queryResultGrid.Columns["StudentID"].Visible = false;
+
+                queryResultGrid.ClearSelection();
+                studentNameTextBox.Text = studentUsernameTextBox.Text = studentPasswordTextBox.Text = "";
+
                 insertStudentBtn.Enabled = editStudentBtn.Enabled = deleteStudentBtn.Enabled = true;
             }
             catch (Exception ex)
@@ -76,42 +84,36 @@ namespace DBPlayground
         /// <param name="e"></param>
         private void insertStudentBtn_Click(object sender, EventArgs e)
         {
-            string sql;
-            Dictionary<string, object> parameters;
-
-            sql = @"SELECT COUNT(StudentID)
-                    FROM Student
-                    WHERE Username = @Username";
-            parameters = new Dictionary<string, object>()
+            // 判斷所有欄位是否已經輸入
+            TextBox[] fields = { studentNameTextBox, studentUsernameTextBox, studentPasswordTextBox };
+            string errorMsg = fieldsIsEmpty(fields);
+            if (!string.IsNullOrEmpty(errorMsg))
             {
-                {"Username", studentUsernameTextBox.Text }
-            };
-
-            try
-            {
-                if (queryScalar(sql, parameters) != 0)
-                {
-                    MessageBox.Show("學生帳號已經存在！", "錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(errorMsg.ToString(), "錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-
-            sql = @"INSERT
-                    INTO Student(StudentID, RealName, Birthdate, Username, Password)
-                    VALUES (@StudentID, @RealName, @Birthdate, @Username, SHA2(@Password, 256))";
-            parameters = new Dictionary<string, object>()
+            // 判斷帳號是否已經存在
+            if (usernameIsExists(studentUsernameTextBox.Text))
             {
-                {"StudentID", Guid.NewGuid().ToString() },
-                {"RealName", studentNameTextBox.Text },
-                {"Birthdate", studentBirthdatePicker.Value },
-                {"Username", studentUsernameTextBox.Text },
-                {"Password", studentPasswordTextBox.Text }
+                MessageBox.Show("帳號已經存在！", "錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // 新增學生資料到資料庫
+            Student student = getStudentFromField();
+            student.StudentID = Guid.NewGuid().ToString();
+
+            string sql = @" INSERT
+                            INTO Student(StudentID, RealName, Birthdate, Username, Password)
+                            VALUES (@StudentID, @RealName, @Birthdate, @Username, SHA2(@Password, 256))";
+            Dictionary<string, object> parameters = new Dictionary<string, object>()
+            {
+                {"StudentID", student.StudentID },
+                {"RealName", student.RealName },
+                {"Birthdate", student.Birthdate },
+                {"Username", student.Username },
+                {"Password", student.Password }
             };
 
             try
@@ -125,6 +127,161 @@ namespace DBPlayground
             }
         }
 
+        /// <summary>
+        /// 編輯學生按紐事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void editStudentBtn_Click(object sender, EventArgs e)
+        {
+            if (queryResultGrid.CurrentRow == null)
+            {
+                return;
+            }
+
+            // 判斷所有欄位是否已經輸入
+            TextBox[] fields = { studentNameTextBox, studentUsernameTextBox};
+            string errorMsg = fieldsIsEmpty(fields);
+            if (!string.IsNullOrEmpty(errorMsg))
+            {
+                MessageBox.Show(errorMsg.ToString(), "錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // 判斷帳號是否已經存在
+            if (usernameIsExists(studentUsernameTextBox.Text))
+            {
+                MessageBox.Show("帳號已經存在！", "錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // 修改學生資料
+            Student student = getStudentFromField();
+
+            string sql = @"UPDATE Student
+                           SET RealName = @RealName,
+                               Birthdate = @Birthdate,
+                               Username = @Username
+                           WHERE StudentID = @StudentID";
+            Dictionary<string, object> parameters = new Dictionary<string, object>()
+            {
+                {"RealName", student.RealName },
+                {"Birthdate", student.Birthdate },
+                {"Username", student.Username },
+                {"StudentID", student.StudentID}
+            };
+
+            try
+            {
+                queryNoneReturn(sql, parameters);
+                queryStudentBtn.PerformClick();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        /// <summary>
+        /// 刪除學生按紐事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void deleteStudentBtn_Click(object sender, EventArgs e)
+        {
+            if (queryResultGrid.CurrentRow == null)
+            {
+                return;
+            }
+
+            Student student = getStudentFromField();
+
+            string sql = @"DELETE
+                           FROM Student
+                           WHERE StudentID = @StudentID";
+            Dictionary<string, object> parameters = new Dictionary<string, object>()
+            {
+                {"StudentID", student.StudentID }
+            };
+
+            try
+            {
+                queryNoneReturn(sql, parameters);
+                queryStudentBtn.PerformClick();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        #endregion
+
+        #region 其他方法
+
+        /// <summary>
+        /// 將畫面上的學生資料封裝成學生物件
+        /// </summary>
+        /// <returns></returns>
+        private Student getStudentFromField()
+        {
+            Student student = new Student();
+
+            student.StudentID = queryResultGrid.CurrentRow?.Cells["StudentID"].Value.ToString() ?? "";
+            student.RealName = studentNameTextBox.Text;
+            student.Birthdate = studentBirthdatePicker.Value;
+            student.Username = studentUsernameTextBox.Text;
+            student.Password = studentPasswordTextBox.Text;
+
+            return student;
+        }
+
+        /// <summary>
+        /// 判斷使用者帳號是否已經存在
+        /// </summary>
+        /// <param name="username">使用者帳號</param>
+        /// <returns></returns>
+        private bool usernameIsExists(string username)
+        {
+            string sql;
+            Dictionary<string, object> parameters;
+
+            sql = @"SELECT COUNT(StudentID)
+                    FROM Student
+                    WHERE Username = @Username";
+            parameters = new Dictionary<string, object>()
+            {
+                {"Username", studentUsernameTextBox.Text }
+            };
+
+            try
+            {
+                return queryScalar(sql, parameters) != 0;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        /// <summary>
+        /// 判斷欄位是否已經輸入
+        /// </summary>
+        /// <param name="fields"></param>
+        /// <returns></returns>
+        private string fieldsIsEmpty(TextBox[] fields)
+        {
+            StringBuilder errorMsg = new StringBuilder();
+            foreach (TextBox field in fields)
+            {
+                if (string.IsNullOrEmpty(field.Text))
+                {
+                    errorMsg.AppendLine(string.Format(@"請輸入 {0} ", field.Tag));
+                }
+            }
+
+            return errorMsg.ToString();
+        }
         #endregion
 
         #region SQL處理

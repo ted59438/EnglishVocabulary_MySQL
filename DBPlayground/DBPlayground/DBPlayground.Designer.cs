@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dbNameInput = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -157,6 +158,14 @@
             this.queryResultGrid.AllowUserToAddRows = false;
             this.queryResultGrid.AllowUserToDeleteRows = false;
             this.queryResultGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("新細明體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.queryResultGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.queryResultGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.queryResultGrid.Location = new System.Drawing.Point(22, 311);
             this.queryResultGrid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -191,6 +200,7 @@
             this.studentNameTextBox.Name = "studentNameTextBox";
             this.studentNameTextBox.Size = new System.Drawing.Size(282, 27);
             this.studentNameTextBox.TabIndex = 13;
+            this.studentNameTextBox.Tag = "姓名";
             // 
             // label5
             // 
@@ -221,6 +231,7 @@
             this.studentUsernameTextBox.Name = "studentUsernameTextBox";
             this.studentUsernameTextBox.Size = new System.Drawing.Size(282, 27);
             this.studentUsernameTextBox.TabIndex = 16;
+            this.studentUsernameTextBox.Tag = "帳號";
             // 
             // label7
             // 
@@ -252,6 +263,7 @@
             this.studentPasswordTextBox.PasswordChar = '*';
             this.studentPasswordTextBox.Size = new System.Drawing.Size(282, 27);
             this.studentPasswordTextBox.TabIndex = 20;
+            this.studentPasswordTextBox.Tag = "密碼";
             // 
             // insertStudentBtn
             // 
@@ -281,6 +293,7 @@
             this.editStudentBtn.TabIndex = 22;
             this.editStudentBtn.Text = "修改學生";
             this.editStudentBtn.UseVisualStyleBackColor = false;
+            this.editStudentBtn.Click += new System.EventHandler(this.editStudentBtn_Click);
             // 
             // deleteStudentBtn
             // 
@@ -295,6 +308,7 @@
             this.deleteStudentBtn.TabIndex = 23;
             this.deleteStudentBtn.Text = "刪除學生";
             this.deleteStudentBtn.UseVisualStyleBackColor = false;
+            this.deleteStudentBtn.Click += new System.EventHandler(this.deleteStudentBtn_Click);
             // 
             // groupBox1
             // 
@@ -343,6 +357,7 @@
             this.studentBirthdatePicker.Name = "studentBirthdatePicker";
             this.studentBirthdatePicker.Size = new System.Drawing.Size(282, 27);
             this.studentBirthdatePicker.TabIndex = 24;
+            this.studentBirthdatePicker.Tag = "生日";
             // 
             // DBPlayground
             // 
