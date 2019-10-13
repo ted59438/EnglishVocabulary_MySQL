@@ -16,7 +16,7 @@ namespace DBPlayground
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DBPlayground());
+            Application.Run(new DBPlayground_EF());
         }
     }
 }

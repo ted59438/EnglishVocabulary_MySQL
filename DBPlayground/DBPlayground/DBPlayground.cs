@@ -37,30 +37,30 @@ namespace DBPlayground
 
         private void queryStudentBtn_Click(object sender, EventArgs e)
         {
-            try
-            {
-                string sql = @"SELECT StudentID,
+            string sql = @"SELECT StudentID,
                                       RealName,
 								      Username,
 								      CAST(Birthdate AS DATE) AS Birthdate
-						       FROM Student";
-
+						   FROM Student";
+            try
+            {
                 queryResultGrid.DataSource = queryDT(sql, new Dictionary<string, object>());
-
-                queryResultGrid.Columns["RealName"].HeaderText = "姓名";
-                queryResultGrid.Columns["Username"].HeaderText = "帳號";
-                queryResultGrid.Columns["Birthdate"].HeaderText = "生日";
-                queryResultGrid.Columns["StudentID"].Visible = false;
-
-                queryResultGrid.ClearSelection();
-                studentNameTextBox.Text = studentUsernameTextBox.Text = studentPasswordTextBox.Text = "";
-
-                insertStudentBtn.Enabled = editStudentBtn.Enabled = deleteStudentBtn.Enabled = true;
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
+
+            queryResultGrid.Columns["RealName"].HeaderText = "姓名";
+            queryResultGrid.Columns["Username"].HeaderText = "帳號";
+            queryResultGrid.Columns["Birthdate"].HeaderText = "生日";
+            queryResultGrid.Columns["StudentID"].Visible = false;
+
+            queryResultGrid.ClearSelection();
+            studentNameTextBox.Text = studentUsernameTextBox.Text = studentPasswordTextBox.Text = "";
+
+            insertStudentBtn.Enabled = editStudentBtn.Enabled = deleteStudentBtn.Enabled = true;
         }
 
         private void queryResultGrid_SelectionChanged(object sender, EventArgs e)

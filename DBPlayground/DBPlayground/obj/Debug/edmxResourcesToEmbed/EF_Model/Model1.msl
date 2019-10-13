@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="VocabularyEntityModelStoreContainer" CdmEntityContainer="VocabularyEntity">
+    <EntitySetMapping Name="category">
+      <EntityTypeMapping TypeName="VocabularyEntityModel.category">
+        <MappingFragment StoreEntitySet="category">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="exam_detail">
+      <EntityTypeMapping TypeName="VocabularyEntityModel.exam_detail">
+        <MappingFragment StoreEntitySet="exam_detail">
+          <ScalarProperty Name="Exam_DetailID" ColumnName="Exam_DetailID" />
+          <ScalarProperty Name="ExamID" ColumnName="ExamID" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="VocabularyID" ColumnName="VocabularyID" />
+          <ScalarProperty Name="IsCorrect" ColumnName="IsCorrect" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="exam_master">
+      <EntityTypeMapping TypeName="VocabularyEntityModel.exam_master">
+        <MappingFragment StoreEntitySet="exam_master">
+          <ScalarProperty Name="ExamID" ColumnName="ExamID" />
+          <ScalarProperty Name="StartDateTime" ColumnName="StartDateTime" />
+          <ScalarProperty Name="EndDateTime" ColumnName="EndDateTime" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+          <ScalarProperty Name="CorrectNumber" ColumnName="CorrectNumber" />
+          <ScalarProperty Name="WrongNumber" ColumnName="WrongNumber" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="student">
+      <EntityTypeMapping TypeName="VocabularyEntityModel.student">
+        <MappingFragment StoreEntitySet="student">
+          <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="RealName" ColumnName="RealName" />
+          <ScalarProperty Name="Birthdate" ColumnName="Birthdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vocabulary">
+      <EntityTypeMapping TypeName="VocabularyEntityModel.vocabulary">
+        <MappingFragment StoreEntitySet="vocabulary">
+          <ScalarProperty Name="VocabularyID" ColumnName="VocabularyID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="English" ColumnName="English" />
+          <ScalarProperty Name="Chinese" ColumnName="Chinese" />
+          <ScalarProperty Name="PartOfSpeech" ColumnName="PartOfSpeech" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VocabularyEntityModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityType Name="category">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CategoryName" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="exam_detail">
+    <Key>
+      <PropertyRef Name="Exam_DetailID" />
+    </Key>
+    <Property Name="Exam_DetailID" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ExamID" Type="varchar" MaxLength="100" />
+    <Property Name="OrderNumber" Type="int" />
+    <Property Name="VocabularyID" Type="varchar" MaxLength="100" />
+    <Property Name="IsCorrect" Type="bool" />
+  </EntityType>
+  <EntityType Name="exam_master">
+    <Key>
+      <PropertyRef Name="ExamID" />
+    </Key>
+    <Property Name="ExamID" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="StartDateTime" Type="datetime" Precision="0" />
+    <Property Name="EndDateTime" Type="datetime" Precision="0" />
+    <Property Name="CategoryID" Type="varchar" MaxLength="100" />
+    <Property Name="StudentID" Type="varchar" MaxLength="100" />
+    <Property Name="CorrectNumber" Type="int" />
+    <Property Name="WrongNumber" Type="int" />
+    <Property Name="Rate" Type="decimal" Precision="10" Scale="2" />
+  </EntityType>
+  <EntityType Name="student">
+    <Key>
+      <PropertyRef Name="StudentID" />
+    </Key>
+    <Property Name="StudentID" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Username" Type="varchar" MaxLength="50" />
+    <Property Name="Password" Type="varchar" MaxLength="300" />
+    <Property Name="RealName" Type="varchar" MaxLength="255" />
+    <Property Name="Birthdate" Type="datetime" Precision="0" />
+  </EntityType>
+  <EntityType Name="vocabulary">
+    <Key>
+      <PropertyRef Name="VocabularyID" />
+    </Key>
+    <Property Name="VocabularyID" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CategoryID" Type="varchar" MaxLength="100" />
+    <Property Name="English" Type="varchar" MaxLength="100" />
+    <Property Name="Chinese" Type="varchar" MaxLength="20" />
+    <Property Name="PartOfSpeech" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityContainer Name="VocabularyEntityModelStoreContainer">
+    <EntitySet Name="category" EntityType="Self.category" Schema="ithome2019_englishvocabulary" store:Type="Tables" />
+    <EntitySet Name="exam_detail" EntityType="Self.exam_detail" Schema="ithome2019_englishvocabulary" store:Type="Tables" />
+    <EntitySet Name="exam_master" EntityType="Self.exam_master" Schema="ithome2019_englishvocabulary" store:Type="Tables" />
+    <EntitySet Name="student" EntityType="Self.student" Schema="ithome2019_englishvocabulary" store:Type="Tables" />
+    <EntitySet Name="vocabulary" EntityType="Self.vocabulary" Schema="ithome2019_englishvocabulary" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

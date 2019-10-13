@@ -31,3 +31,14 @@ F:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day21\EnglishV
 F:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day21\EnglishVocabulary_MySQL\DBPlayground\DBPlayground\obj\Debug\DBPlayground.DBPlayground.resources
 F:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day21\EnglishVocabulary_MySQL\DBPlayground\DBPlayground\obj\Debug\DBPlayground.Properties.Resources.resources
 F:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day21\EnglishVocabulary_MySQL\DBPlayground\DBPlayground\obj\Debug\DBPlayground.csproj.GenerateResource.Cache
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day21\EnglishVocabulary_MySQL\DBPlayground\DBPlayground\bin\Debug\MySql.Data.Entity.dll
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day21\EnglishVocabulary_MySQL\DBPlayground\DBPlayground\bin\Debug\MySql.Data.Entity.EF6.dll
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day21\EnglishVocabulary_MySQL\DBPlayground\DBPlayground\bin\Debug\MySql.Fabric.Plugin.dll
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day21\EnglishVocabulary_MySQL\DBPlayground\DBPlayground\bin\Debug\MySql.Web.dll
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day21\EnglishVocabulary_MySQL\DBPlayground\DBPlayground\bin\Debug\MySql.Data.xml
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day21\EnglishVocabulary_MySQL\DBPlayground\DBPlayground\bin\Debug\MySql.Data.Entity.EF6.xml
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day21\EnglishVocabulary_MySQL\DBPlayground\DBPlayground\bin\Debug\MySql.Web.xml
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day21\EnglishVocabulary_MySQL\DBPlayground\DBPlayground\bin\Debug\EntityFramework.dll
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day21\EnglishVocabulary_MySQL\DBPlayground\DBPlayground\bin\Debug\EntityFramework.xml
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day21\EnglishVocabulary_MySQL\DBPlayground\DBPlayground\bin\Debug\zh-Hant\EntityFramework.resources.dll
+E:\工作用\Sunware\ChengYu\Playground\ITHome_鐵人賽\NoFinish\Day21\EnglishVocabulary_MySQL\DBPlayground\DBPlayground\obj\Debug\DBPlayground.DBPlayground_EF.resources

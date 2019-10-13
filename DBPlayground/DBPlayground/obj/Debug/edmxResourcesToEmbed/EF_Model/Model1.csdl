@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VocabularyEntityModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityType Name="category">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CategoryName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="exam_detail">
+    <Key>
+      <PropertyRef Name="Exam_DetailID" />
+    </Key>
+    <Property Name="Exam_DetailID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ExamID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="OrderNumber" Type="Int32" />
+    <Property Name="VocabularyID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IsCorrect" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="exam_master">
+    <Key>
+      <PropertyRef Name="ExamID" />
+    </Key>
+    <Property Name="ExamID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="StartDateTime" Type="DateTime" />
+    <Property Name="EndDateTime" Type="DateTime" />
+    <Property Name="CategoryID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="StudentID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CorrectNumber" Type="Int32" />
+    <Property Name="WrongNumber" Type="Int32" />
+    <Property Name="Rate" Type="Decimal" />
+  </EntityType>
+  <EntityType Name="student">
+    <Key>
+      <PropertyRef Name="StudentID" />
+    </Key>
+    <Property Name="StudentID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="RealName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Birthdate" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="vocabulary">
+    <Key>
+      <PropertyRef Name="VocabularyID" />
+    </Key>
+    <Property Name="VocabularyID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CategoryID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="English" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Chinese" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PartOfSpeech" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="VocabularyEntity" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="category" EntityType="Self.category" />
+    <EntitySet Name="exam_detail" EntityType="Self.exam_detail" />
+    <EntitySet Name="exam_master" EntityType="Self.exam_master" />
+    <EntitySet Name="student" EntityType="Self.student" />
+    <EntitySet Name="vocabulary" EntityType="Self.vocabulary" />
+  </EntityContainer>
+</Schema>
