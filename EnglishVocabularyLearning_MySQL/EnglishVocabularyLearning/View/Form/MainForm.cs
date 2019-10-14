@@ -51,45 +51,55 @@ namespace EnglishVocabularyLearning
 			this.Visible = true;
 		}
 
-        #region Student Icon
+		#region Student Icon
 
-        private void studentsIcon_MouseEnter(object sender, EventArgs e)
-        {
-            studentsIcon.Image = (Image)Properties.Resources.students_hover;
-            studentsIcon.Cursor = Cursors.Hand;
-        }
+		private void studentsIcon_MouseEnter(object sender, EventArgs e)
+		{
+			studentsIcon.Image = (Image)Properties.Resources.students_hover;
+			studentsIcon.Cursor = Cursors.Hand;
+		}
 
-        private void studentsIcon_MouseLeave(object sender, EventArgs e)
-        {
-            studentsIcon.Image = (Image)Properties.Resources.students;
-        }
+		private void studentsIcon_MouseLeave(object sender, EventArgs e)
+		{
+			studentsIcon.Image = (Image)Properties.Resources.students;
+		}
 
-        private void studentsIcon_Click(object sender, EventArgs e)
-        {
-            StudentManagement studentForm = new StudentManagement();
-            studentForm.ShowDialog();
-        }
+		private void studentsIcon_Click(object sender, EventArgs e)
+		{
+			StudentManagement studentForm = new StudentManagement();
+			studentForm.ShowDialog();
+		}
 
-        #endregion
+		#endregion
 
-        #region Setting Icon
+		#region Setting Icon
 
-        private void settingIcon_MouseEnter(object sender, EventArgs e)
-        {
-            settingIcon.Image = (Image)Properties.Resources.settings_hover;
-            settingIcon.Cursor = Cursors.Hand;
-        }
+		private void settingIcon_MouseEnter(object sender, EventArgs e)
+		{
+			settingIcon.Image = (Image)Properties.Resources.settings_hover;
+			settingIcon.Cursor = Cursors.Hand;
+		}
 
-        private void settingIcon_MouseLeave(object sender, EventArgs e)
-        {
-            settingIcon.Image = (Image)Properties.Resources.settings;
-        }
+		private void settingIcon_MouseLeave(object sender, EventArgs e)
+		{
+			settingIcon.Image = (Image)Properties.Resources.settings;
+		}
 
-        private void settingIcon_Click(object sender, EventArgs e)
-        {
-            DBSettingForm settingForm = new DBSettingForm();
-            settingForm.ShowDialog();
-        }
-        #endregion
-    }
+		private void settingIcon_Click(object sender, EventArgs e)
+		{
+			DBSettingForm settingForm = new DBSettingForm();
+			settingForm.ShowDialog();
+		}
+		#endregion
+
+		private void button2_Click(object sender, EventArgs e)
+		{
+			QuizRecordForm recordForm = new QuizRecordForm();
+
+			if (Application.OpenForms["QuizRecordForm"] == null)
+			{
+				recordForm.Show();
+			}
+		}
+	}
 }

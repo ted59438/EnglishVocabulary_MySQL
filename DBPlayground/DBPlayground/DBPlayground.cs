@@ -44,7 +44,7 @@ namespace DBPlayground
 						   FROM Student";
             try
             {
-                queryResultGrid.DataSource = queryDT(sql, new Dictionary<string, object>());
+                queryStudentGrid.DataSource = queryDT(sql, new Dictionary<string, object>());
             }
             catch (Exception ex)
             {
@@ -52,12 +52,12 @@ namespace DBPlayground
                 return;
             }
 
-            queryResultGrid.Columns["RealName"].HeaderText = "姓名";
-            queryResultGrid.Columns["Username"].HeaderText = "帳號";
-            queryResultGrid.Columns["Birthdate"].HeaderText = "生日";
-            queryResultGrid.Columns["StudentID"].Visible = false;
+            queryStudentGrid.Columns["RealName"].HeaderText = "姓名";
+            queryStudentGrid.Columns["Username"].HeaderText = "帳號";
+            queryStudentGrid.Columns["Birthdate"].HeaderText = "生日";
+            queryStudentGrid.Columns["StudentID"].Visible = false;
 
-            queryResultGrid.ClearSelection();
+            queryStudentGrid.ClearSelection();
             studentNameTextBox.Text = studentUsernameTextBox.Text = studentPasswordTextBox.Text = "";
 
             insertStudentBtn.Enabled = editStudentBtn.Enabled = deleteStudentBtn.Enabled = true;
@@ -65,12 +65,12 @@ namespace DBPlayground
 
         private void queryResultGrid_SelectionChanged(object sender, EventArgs e)
         {
-            if (queryResultGrid.CurrentRow == null)
+            if (queryStudentGrid.CurrentRow == null)
             {
                 return;
             }
 
-            DataGridViewRow selectRow = queryResultGrid.CurrentRow;
+            DataGridViewRow selectRow = queryStudentGrid.CurrentRow;
 
             studentNameTextBox.Text = Convert.ToString(selectRow.Cells["RealName"].Value);
             studentBirthdatePicker.Value = Convert.ToDateTime(selectRow.Cells["Birthdate"].Value);
@@ -134,7 +134,7 @@ namespace DBPlayground
         /// <param name="e"></param>
         private void editStudentBtn_Click(object sender, EventArgs e)
         {
-            if (queryResultGrid.CurrentRow == null)
+            if (queryStudentGrid.CurrentRow == null)
             {
                 return;
             }
@@ -189,7 +189,7 @@ namespace DBPlayground
         /// <param name="e"></param>
         private void deleteStudentBtn_Click(object sender, EventArgs e)
         {
-            if (queryResultGrid.CurrentRow == null)
+            if (queryStudentGrid.CurrentRow == null)
             {
                 return;
             }
@@ -215,6 +215,30 @@ namespace DBPlayground
             }
         }
 
+        /// <summary>
+        /// 隨機取得單字的按鈕事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void queryVocabularyBtn_Click(object sender, EventArgs e)
+        {
+            string sql = @"SELECT *
+                           FROM Vocabulary
+                           ORDER BY RAND()
+                           LIMIT 5";
+            Dictionary<string, object> parameters = new Dictionary<string, object>();
+            try
+            {
+                queryVocabularyGrid.DataSource = queryDT(sql, parameters);
+
+                queryVocabularyGrid.Columns["VocabularyID"].Visible = false;
+                queryVocabularyGrid.Columns["CategoryID"].Visible = false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
         #endregion
 
         #region 其他方法
@@ -227,7 +251,7 @@ namespace DBPlayground
         {
             Student student = new Student();
 
-            student.StudentID = queryResultGrid.CurrentRow?.Cells["StudentID"].Value.ToString() ?? "";
+            student.StudentID = queryStudentGrid.CurrentRow?.Cells["StudentID"].Value.ToString() ?? "";
             student.RealName = studentNameTextBox.Text;
             student.Birthdate = studentBirthdatePicker.Value;
             student.Username = studentUsernameTextBox.Text;

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dbNameInput = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -38,7 +38,7 @@
             this.connectBtn = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.dbUsernameInput = new System.Windows.Forms.TextBox();
-            this.queryResultGrid = new System.Windows.Forms.DataGridView();
+            this.queryStudentGrid = new System.Windows.Forms.DataGridView();
             this.queryStudentBtn = new System.Windows.Forms.Button();
             this.studentNameTextBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -53,9 +53,12 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.studentBirthdatePicker = new System.Windows.Forms.DateTimePicker();
-            ((System.ComponentModel.ISupportInitialize)(this.queryResultGrid)).BeginInit();
+            this.queryVocabularyBtn = new System.Windows.Forms.Button();
+            this.queryVocabularyGrid = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.queryStudentGrid)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.queryVocabularyGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // dbNameInput
@@ -153,29 +156,29 @@
             this.dbUsernameInput.TabIndex = 2;
             this.dbUsernameInput.Text = "root";
             // 
-            // queryResultGrid
+            // queryStudentGrid
             // 
-            this.queryResultGrid.AllowUserToAddRows = false;
-            this.queryResultGrid.AllowUserToDeleteRows = false;
-            this.queryResultGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("新細明體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.queryResultGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.queryResultGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.queryResultGrid.Location = new System.Drawing.Point(22, 311);
-            this.queryResultGrid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.queryResultGrid.Name = "queryResultGrid";
-            this.queryResultGrid.ReadOnly = true;
-            this.queryResultGrid.RowTemplate.Height = 27;
-            this.queryResultGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.queryResultGrid.Size = new System.Drawing.Size(769, 266);
-            this.queryResultGrid.TabIndex = 7;
-            this.queryResultGrid.SelectionChanged += new System.EventHandler(this.queryResultGrid_SelectionChanged);
+            this.queryStudentGrid.AllowUserToAddRows = false;
+            this.queryStudentGrid.AllowUserToDeleteRows = false;
+            this.queryStudentGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("新細明體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.queryStudentGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.queryStudentGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.queryStudentGrid.Location = new System.Drawing.Point(22, 314);
+            this.queryStudentGrid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.queryStudentGrid.Name = "queryStudentGrid";
+            this.queryStudentGrid.ReadOnly = true;
+            this.queryStudentGrid.RowTemplate.Height = 27;
+            this.queryStudentGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.queryStudentGrid.Size = new System.Drawing.Size(769, 251);
+            this.queryStudentGrid.TabIndex = 7;
+            this.queryStudentGrid.SelectionChanged += new System.EventHandler(this.queryResultGrid_SelectionChanged);
             // 
             // queryStudentBtn
             // 
@@ -359,22 +362,51 @@
             this.studentBirthdatePicker.TabIndex = 24;
             this.studentBirthdatePicker.Tag = "生日";
             // 
+            // queryVocabularyBtn
+            // 
+            this.queryVocabularyBtn.BackColor = System.Drawing.Color.MistyRose;
+            this.queryVocabularyBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.queryVocabularyBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.queryVocabularyBtn.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.queryVocabularyBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.queryVocabularyBtn.Location = new System.Drawing.Point(813, 21);
+            this.queryVocabularyBtn.Name = "queryVocabularyBtn";
+            this.queryVocabularyBtn.Size = new System.Drawing.Size(522, 37);
+            this.queryVocabularyBtn.TabIndex = 26;
+            this.queryVocabularyBtn.Text = "隨機取得五個單字";
+            this.queryVocabularyBtn.UseVisualStyleBackColor = false;
+            this.queryVocabularyBtn.Click += new System.EventHandler(this.queryVocabularyBtn_Click);
+            // 
+            // queryVocabularyGrid
+            // 
+            this.queryVocabularyGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.queryVocabularyGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.queryVocabularyGrid.Location = new System.Drawing.Point(813, 74);
+            this.queryVocabularyGrid.Name = "queryVocabularyGrid";
+            this.queryVocabularyGrid.RowTemplate.Height = 27;
+            this.queryVocabularyGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.queryVocabularyGrid.Size = new System.Drawing.Size(522, 491);
+            this.queryVocabularyGrid.TabIndex = 27;
+            // 
             // DBPlayground
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(832, 599);
+            this.ClientSize = new System.Drawing.Size(1359, 578);
+            this.Controls.Add(this.queryVocabularyGrid);
+            this.Controls.Add(this.queryVocabularyBtn);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.queryResultGrid);
+            this.Controls.Add(this.queryStudentGrid);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "DBPlayground";
             this.Text = "DB Playground";
-            ((System.ComponentModel.ISupportInitialize)(this.queryResultGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.queryStudentGrid)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.queryVocabularyGrid)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -390,7 +422,7 @@
         private System.Windows.Forms.Button connectBtn;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox dbUsernameInput;
-        private System.Windows.Forms.DataGridView queryResultGrid;
+        private System.Windows.Forms.DataGridView queryStudentGrid;
 		private System.Windows.Forms.Button queryStudentBtn;
         private System.Windows.Forms.TextBox studentNameTextBox;
         private System.Windows.Forms.Label label5;
@@ -405,6 +437,8 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DateTimePicker studentBirthdatePicker;
+        private System.Windows.Forms.Button queryVocabularyBtn;
+        private System.Windows.Forms.DataGridView queryVocabularyGrid;
     }
 }
 

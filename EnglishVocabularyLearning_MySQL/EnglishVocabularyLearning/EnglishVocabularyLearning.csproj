@@ -88,11 +88,11 @@
     <Compile Include="View\Form\QuizForm.Designer.cs">
       <DependentUpon>QuizForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Dialog\QuizRecordForm.cs">
+    <Compile Include="View\Dialog\FinishRecordForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Dialog\QuizRecordForm.Designer.cs">
-      <DependentUpon>QuizRecordForm.cs</DependentUpon>
+    <Compile Include="View\Dialog\FinishRecordForm.Designer.cs">
+      <DependentUpon>FinishRecordForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ModelObject\QuizResultData.cs" />
     <Compile Include="View\Dialog\TextInputBox.cs">
@@ -100,6 +100,12 @@
     </Compile>
     <Compile Include="View\Dialog\TextInputBox.Designer.cs">
       <DependentUpon>TextInputBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Form\QuizRecordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form\QuizRecordForm.Designer.cs">
+      <DependentUpon>QuizRecordForm.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Form\VocabularyManagement.cs">
       <SubType>Form</SubType>
@@ -132,11 +138,14 @@
     <EmbeddedResource Include="View\Form\QuizForm.resx">
       <DependentUpon>QuizForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Dialog\QuizRecordForm.resx">
-      <DependentUpon>QuizRecordForm.cs</DependentUpon>
+    <EmbeddedResource Include="View\Dialog\FinishRecordForm.resx">
+      <DependentUpon>FinishRecordForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Dialog\TextInputBox.resx">
       <DependentUpon>TextInputBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Form\QuizRecordForm.resx">
+      <DependentUpon>QuizRecordForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Form\VocabularyManagement.resx">
       <DependentUpon>VocabularyManagement.cs</DependentUpon>
