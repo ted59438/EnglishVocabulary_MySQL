@@ -1,0 +1,4 @@
+bd65bfb1-4fa0-45a8-a218-ff2aa8c209f3;2018-12-05;10:20:52;Transportation 交通;7;7;0;100
+ad8f5dc7-4a85-4c4a-b7a7-a73ab833a976;2018-12-05;11:03:52;Transportation 交通;7;7;0;100
+beb0123d-8607-48d0-a4f7-7b4e15b48d87;2018-12-05;11:45:40;Transportation 交通;7;7;0;100
+006b573b-bc1b-47fe-a663-8abc5a631e7d;2018-12-05;11:46:39;Transportation 交通;7;7;0;100

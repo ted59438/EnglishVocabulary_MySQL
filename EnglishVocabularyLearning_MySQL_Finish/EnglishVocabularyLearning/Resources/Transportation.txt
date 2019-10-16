@@ -1,0 +1,7 @@
+bus,公車
+train,火車
+car,汽車/轎車
+taxi,計程車
+Bicycle,腳踏車
+motorcycle,機車
+plane,飛機

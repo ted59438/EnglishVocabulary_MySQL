@@ -1,0 +1,7 @@
+bicycle,踏踏車,n
+bus,公車,n
+car,汽車,n
+motorcycle,機車,n
+taxi,計程車,n
+train,火車,n
+transportation,交通工具,n
